@@ -130,7 +130,7 @@ def build_system_prompt_parts(agent: Any, system_message: Optional[str] = None) 
         # Fallback for code paths that bypass agent_init (rare).
         tool_guidance.append(KANBAN_GUIDANCE)
     if tool_guidance:
-        stable_parts.append(" ".join(tool_guidance))
+        stable_parts.append("\n\n".join(tool_guidance))
 
     # Steering only lands inside tool results, so it's only reachable when the
     # agent has tools. Static text → byte-stable prompt (no cache hit).
