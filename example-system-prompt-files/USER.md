@@ -1,10 +1,3 @@
----
-# USER.md — Personal Profile
-# This is read by Hermes Agent and injected into the system prompt.
-# It describes the user's preferences, environment, and conventions.
-# Keep it concise and factual.
----
-
 name: Alex Chen
 role: Senior Backend Engineer / Tech Lead
 languages:

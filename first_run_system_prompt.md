@@ -250,11 +250,11 @@ Respect the user's repo: don't commit, push, or rewrite history unless asked, an
 Workspace (snapshot at session start — re-check with `git` before acting on it):
 - Root: /Users/zifeng/Documents/hermes-agent
 - Branch: system-prompt-generator
-- Status: clean
+- Status: 1 modified
 - Recent commits:
+    65a27436d chore: regenerate first_run_system_prompt.md after rebase
     e5ed89d8c fix: join tool guidance blocks with double newlines instead of space
     22be67501 feat: add system prompt generator script and example files
-    7cd71de1f Simplify dashboard update detection to containers
 - Project: pyproject.toml, setup.py, package.json, Dockerfile (uv/npm)
 - Verify: scripts/run_tests.sh; pytest
 - Context files: AGENTS.md
@@ -613,13 +613,6 @@ Reviewers should reject new change-detector tests; authors should convert
 them into invariants before re-requesting review.
 
 # User Profile
-
----
-# USER.md — Personal Profile
-# This is read by Hermes Agent and injected into the system prompt.
-# It describes the user's preferences, environment, and conventions.
-# Keep it concise and factual.
----
 
 name: Alex Chen
 role: Senior Backend Engineer / Tech Lead
