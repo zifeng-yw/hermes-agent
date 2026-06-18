@@ -79,6 +79,9 @@ class MockAgent:
                 pass
         self._memory_store = MemoryStore()
 
+    def _emit_status(self, message: str) -> None:
+        pass
+
     def _vprint(self, msg, force=False):
         pass
 

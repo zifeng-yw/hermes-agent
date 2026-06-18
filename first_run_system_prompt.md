@@ -250,11 +250,11 @@ Respect the user's repo: don't commit, push, or rewrite history unless asked, an
 Workspace (snapshot at session start — re-check with `git` before acting on it):
 - Root: /Users/zifeng/Documents/hermes-agent
 - Branch: system-prompt-generator
-- Status: clean
+- Status: 2 modified
 - Recent commits:
-    d714b215b chore: regenerate first_run_system_prompt.md with upstream changes
-    65a27436d chore: regenerate first_run_system_prompt.md after rebase
-    e5ed89d8c fix: join tool guidance blocks with double newlines instead of space
+    256cb9c23 Merge remote-tracking branch 'origin/main' into system-prompt-generator
+    3769dff5d fix(approval): honor glob command allowlist entries (#43051)
+    c276b017a feat(relay): connector⇄gateway channel auth + signed-HTTP inbound receiver + enroll CLI (#48147)
 - Project: pyproject.toml, setup.py, package.json, Dockerfile (uv/npm)
 - Verify: scripts/run_tests.sh; pytest
 - Context files: AGENTS.md
@@ -508,7 +508,7 @@ hermes-agent/
 │   │                     #   homeassistant, signal, matrix, mattermost, email, sms,
 │   │    
 
-[...truncated AGENTS.md: kept 14000+4000 of 69213 chars. Use file tools to read the full file.]
+[...truncated AGENTS.md: kept 14000+4000 of 69213 chars. The middle is omitted — if you need the full instructions, read the complete file with the read_file tool: /Users/zifeng/Documents/hermes-agent/AGENTS.md]
 
 rom one test cannot leak into the next — the historic
 `_reset_module_state` autouse fixture is gone.
@@ -659,7 +659,7 @@ projects:
   - k8s-operator-toolkit: maintainer
   - blog: occasional technical writing at alexchen.dev
 
-Conversation started: Tuesday, June 16, 2026
+Conversation started: Thursday, June 18, 2026
 Session ID: session_firstrun_00000000
 Model: gpt-4o
 Provider: openai
